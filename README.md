@@ -1,15 +1,15 @@
-# ITCO Reddit Tip Bot
+# ITCO Reddit TipBot
 
 ## About
 This project implements a reddit tip bot which provides users an abstraction for a ITCO wallet. Users are given their own unique deposit address, and can send ITCO to other Reddit users by commenting on posts. The receiving user can then register with the tipbot via Reddit private message, and redeem their funds.
-The goal of this is to foster the exchange of the NANO cryptocurrency all throughout reddit.
+The goal of this is to foster the exchange of the ITCO cryptocurrency all throughout reddit.
 
 ## Installation
 Edit settings.py.example with your own details for accessing the Reddit API and also the wallet ID for your ITCO node then rename the file to settings.py
 
 ## Running
 Use the `launchScanners.sh` script to kill existing python processes, and start the two bots in the background.
-`inbox_scanner.py` reads all incoming reddit mail to the bot to answer queries, and `comments_scanner.py` scans the entire NANO subreddit for mentions using `!tipxrb` or `!tipnano`.
+`inbox_scanner.py` reads all incoming reddit mail to the bot to answer queries, and `comments_scanner.py` scans the entire NANO subreddit for mentions using `!tipitco`.
 
 ## Using
 #### Tipping with the Bot in Comments
@@ -50,4 +50,4 @@ Use the address command in a private message to the bot to retrieve your deposit
 Retrieving Your ITCO Balance
 In the commands section above, the send command was covered. Use that command to retrieve your ITCO balance by sending it to an external ITCO account address that you hold. For example:
 
-- send 0.01 xrb_3zhgmaoxc4gdypafmcqa5tuf3ad9w3d8g9mjutfcxbo8s1e78bu3qm6qjyqz will send 0.01 ITCO from your TipBot account to the specified address.
+- send 0.01 itco_3zhgmaoxc4gdypafmcqa5tuf3ad9w3d8g9mjutfcxbo8s1e78bu3qm6qjyqz will send 0.01 ITCO from your TipBot account to the specified address.
